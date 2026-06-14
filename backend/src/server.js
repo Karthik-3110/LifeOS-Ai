@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
@@ -54,7 +54,7 @@ bootstrap().catch((error) => {
   console.error("Failed to start backend", error);
   process.exit(1);
 });
-=======
+
  function _nullishCoalesce(lhs, rhsFn) { if (lhs != null) { return lhs; } else { return rhsFn(); } }import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
@@ -109,4 +109,4 @@ export default {
     }
   },
 };
->>>>>>> f8a9aba6e03af9b8030985334a97666e1b183447
+
