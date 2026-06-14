@@ -39,6 +39,12 @@ app.use(mongoSanitize());
 app.use(morgan("dev"));
 
 app.use("/api", apiRouter);
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    service: "LifeOS AI Backend",
+  });
+});
 app.use(notFoundHandler);
 app.use(errorHandler);
 
