@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "lifeos-ai-backend",
   "version": "1.0.0",
   "private": true,
@@ -74,6 +73,5 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.16"
->>>>>>> f8a9aba6e03af9b8030985334a97666e1b183447
   }
 }
