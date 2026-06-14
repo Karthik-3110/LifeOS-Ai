@@ -14,15 +14,19 @@ export default defineConfig({
       tsconfigPaths: true,
     },
     server: {
-      port: 5173,
-      strictPort: true,
-      proxy: {
-        "/api": {
-          target: "http://localhost:5000",
-          changeOrigin: true,
-        },
-      },
+  port: 5173,
+  strictPort: true,
+  allowedHosts: [
+    "lifeosai.onrender.com",
+    ".onrender.com"
+  ],
+  proxy: {
+    "/api": {
+      target: "https://lifeos-ai-5352.onrender.com",
+      changeOrigin: true,
     },
+  },
+},
     optimizeDeps: {
       include: [
         "react",
